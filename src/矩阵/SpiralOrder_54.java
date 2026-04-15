@@ -10,12 +10,13 @@ public class SpiralOrder_54 {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
             return null;
         int rows = matrix.length, cols = matrix[0].length;
+
         List<Integer> list = new ArrayList<>();
         boolean[][] used = new boolean[rows][cols];
         int[][] direction = new int[][]{{0,1},{1,0},{0,-1},{-1, 0}};
         int total = rows * cols;
-        int directionIndex = 0;
-        int row = 0, col = 0;
+
+        int row = 0, col = 0, directionIndex = 0;
         for (int i=0; i<total; i++){
             used[row][col] = true;
             list.add(matrix[row][col]);
