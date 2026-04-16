@@ -28,7 +28,7 @@ public class DecodeString_394 {
                 stk.addLast(String.valueOf(s.charAt(ptr++)));
             } else {
                 ++ptr;
-                LinkedList<String> sub = new LinkedList<String>();
+                LinkedList<String> sub = new LinkedList<>();
                 while (!"[".equals(stk.peekLast())) {
                     sub.addLast(stk.removeLast());
                 }
