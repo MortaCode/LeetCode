@@ -14,6 +14,7 @@ public class ListNode {
         for (int i=1; i<values.length; i++){
             ListNode node = new ListNode(values[i]);
             cur.next = node;
+            cur =cur.next;
         }
         return head;
     }
